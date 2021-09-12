@@ -1,12 +1,13 @@
 import React from "react";
+import NavBar from "../NavBar/NavBar";
 
 // Styling
 import styles from "./Header.module.scss";
 
 const Header: React.FC = () => (
-  <div className={styles.container}>
-    <div className="" />
-  </div>
+  <header className={styles.container}>
+    <NavBar />
+  </header>
 );
 
 export default Header;

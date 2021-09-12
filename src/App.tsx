@@ -1,8 +1,13 @@
 import React from "react";
+import Header from "./Components/Header/Header";
 
 // Styling
 import styles from "./Styles/App.module.scss";
 
-const App: React.FC = () => <div className={styles.container} />;
+const App: React.FC = () => (
+  <main className={styles.container}>
+    <Header />
+  </main>
+);
 
 export default App;

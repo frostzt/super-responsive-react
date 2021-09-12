@@ -22,6 +22,10 @@ code {
 
 // Global Style Variables
 :root {
+  // Colors
+  --white: #fff;
+  --black: #212529;
+
   --background-gradient: radial-gradient(
       circle farthest-corner at 35% 90%,
       #fec564,
