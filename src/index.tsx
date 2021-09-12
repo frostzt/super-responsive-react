@@ -6,7 +6,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 // Global Styles
-import "./index.scss";
+import "./Styles/index.scss";
 
 ReactDOM.render(
   <React.StrictMode>
