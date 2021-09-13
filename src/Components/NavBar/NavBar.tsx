@@ -1,16 +1,23 @@
 import React from "react";
-import Buttons from "../Buttons/Buttons";
 
 // Styling
+import { motion } from "framer-motion";
 import styles from "./NavBar.module.scss";
+import { containerVarient, childrenVarient } from "./NavBar.varients";
+
+// Components
+import Buttons from "../Buttons/Buttons";
 
 const NavBar: React.FC = () => (
-  <div className={styles.container}>
-    <div className={styles.logo}>SuperDev</div>
-    <div className={styles.buttons}>
+  <motion.div variants={containerVarient} initial="initial" animate="animate" className={styles.container}>
+    <motion.div variants={childrenVarient} className={styles.logo}>
+      SuperDev
+    </motion.div>
+    <motion.div variants={childrenVarient} className={styles.buttons}>
+      <Buttons invert>Login</Buttons>
       <Buttons>Register</Buttons>
-    </div>
-  </div>
+    </motion.div>
+  </motion.div>
 );
 
 export default NavBar;

@@ -11,7 +11,7 @@ interface Props {
 }
 
 const Buttons: React.FC<Props> = ({ children, invert }) => (
-  <div className={cx([styles.container, invert ? styles.inverted : null])}>
+  <div className={cx([invert ? styles.inverted : styles.container])}>
     <div>{children}</div>
   </div>
 );
