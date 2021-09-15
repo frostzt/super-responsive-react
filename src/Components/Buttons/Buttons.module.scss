@@ -9,3 +9,15 @@
   padding: 0.8rem 1.2rem;
   background-color: var(--black);
 }
+
+.inverted {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 0.9rem;
+  width: fit-content;
+  height: fit-content;
+  color: var(--black);
+  border-radius: 0.8rem;
+  padding: 0.8rem 1.2rem;
+  background-color: var(--white);
+}

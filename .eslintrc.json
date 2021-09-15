@@ -16,7 +16,10 @@
 
   "rules": {
     "import/extensions": 0,
+    "react/prop-types": "off",
     "no-use-before-define": "off",
+    "react/no-unused-prop-types": [0],
+    "react/require-default-props": [0],
     "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
     "@typescript-eslint/no-use-before-define": ["error"]
   },
