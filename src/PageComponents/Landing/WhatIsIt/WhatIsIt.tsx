@@ -4,6 +4,9 @@ import React from "react";
 import cx from "classnames";
 import styles from "./WhatIsIt.module.scss";
 
+// Components
+import MobileDevice from "../../../Components/MobileMockup/MobileDevice";
+
 interface Props {
   inView: boolean;
   extraClasses?: string;
@@ -16,6 +19,9 @@ const WhatIsIt = React.forwardRef<HTMLDivElement, Props>(({ extraClasses }, obse
       <p>
         SuperDev is a product that you have been waiting for all this time, and here is everything you need to know.
       </p>
+    </div>
+    <div className={styles.main}>
+      <MobileDevice />
     </div>
   </div>
 ));
