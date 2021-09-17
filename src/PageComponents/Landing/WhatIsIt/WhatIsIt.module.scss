@@ -1,2 +1,13 @@
 .container {
+  width: 100%;
+
+  .text {
+    padding: 0 1.5rem;
+    color: var(--default-text-color);
+
+    .title {
+      color: var(--black);
+      margin-bottom: 0.6rem;
+    }
+  }
 }

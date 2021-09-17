@@ -24,10 +24,12 @@ code {
   // Colors
   --white: #fff;
   --black: #212529;
+  --default-text-color: #5f5f5f;
 
   // Font Sizes
-  --font-size-heading-primary: 3.2rem;
   --font-size-text: 1rem;
+  --font-size-heading-primary: 3.2rem;
+  --font-size-heading-secondary: 2.6rem;
 
   // Gradients
   --background-gradient: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
@@ -44,4 +46,9 @@ code {
 .heading-primary {
   font-weight: 700;
   font-size: var(--font-size-heading-primary);
+}
+
+.heading-secondary {
+  font-weight: 700;
+  font-size: var(--font-size-heading-secondary);
 }

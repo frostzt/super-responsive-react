@@ -10,8 +10,12 @@ import { mainVarient, contentVarient, paragraphVarient } from "./Header.varients
 import NavBar from "../../../Components/NavBar/NavBar";
 import Buttons from "../../../Components/Buttons/Buttons";
 
-const Header: React.FC = () => (
-  <header className={styles.container}>
+interface Props {
+  extraClasses?: string;
+}
+
+const Header: React.FC<Props> = ({ extraClasses }) => (
+  <header className={cx([styles.container, extraClasses || null])}>
     <NavBar />
     <motion.div className={styles.main} variants={mainVarient} initial="initial" animate="animate">
       <h1 className={cx(["heading-primary", styles.title])}>
