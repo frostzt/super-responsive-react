@@ -7,8 +7,8 @@ import styles from "./Header.module.scss";
 import { mainVarient, contentVarient, paragraphVarient } from "./Header.varients";
 
 // Components
-import NavBar from "../NavBar/NavBar";
-import Buttons from "../Buttons/Buttons";
+import NavBar from "../../../Components/NavBar/NavBar";
+import Buttons from "../../../Components/Buttons/Buttons";
 
 const Header: React.FC = () => (
   <header className={styles.container}>

@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./Components/Header/Header";
+import Header from "./PageComponents/Landing/Header/Header";
 
 // Styling
 import styles from "./Styles/App.module.scss";
