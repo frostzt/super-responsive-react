@@ -9,7 +9,7 @@ import WhatIsIt from "./PageComponents/Landing/WhatIsIt/WhatIsIt";
 import styles from "./Styles/App.module.scss";
 
 const App: React.FC = () => {
-  const [whatIsItRef, whatIsItInView] = useInView({ threshold: 0 });
+  const [whatIsItRef, whatIsItInView] = useInView({ threshold: 0.3 });
 
   return (
     <main className={styles.container}>

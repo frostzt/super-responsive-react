@@ -2,6 +2,7 @@ import React from "react";
 
 // Styling
 import cx from "classnames";
+import { motion } from "framer-motion";
 import styles from "./WhatIsIt.module.scss";
 
 // Components
@@ -13,7 +14,10 @@ interface Props {
 }
 
 const WhatIsIt = React.forwardRef<HTMLDivElement, Props>(({ extraClasses }, observerRef) => (
-  <div ref={observerRef} className={cx([styles.container, extraClasses || null])}>
+  // const { scrollYProgress } = useViewportScroll();
+  // const yProgress = useTransform(scrollYProgress, [0, 1], [0, 2000]);
+
+  <motion.div ref={observerRef} className={cx([styles.container, extraClasses || null])}>
     <div className={styles.text}>
       <h2 className={cx(["heading-secondary", styles.title])}>What is it</h2>
       <p>
@@ -21,9 +25,9 @@ const WhatIsIt = React.forwardRef<HTMLDivElement, Props>(({ extraClasses }, obse
       </p>
     </div>
     <div className={styles.main}>
-      <MobileDevice />
+      <MobileDevice extraClasses={styles.mobileDevice} />
     </div>
-  </div>
+  </motion.div>
 ));
 
 WhatIsIt.displayName = "WhatIsIt";
