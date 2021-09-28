@@ -14,9 +14,6 @@ interface Props {
 }
 
 const WhatIsIt = React.forwardRef<HTMLDivElement, Props>(({ extraClasses }, observerRef) => (
-  // const { scrollYProgress } = useViewportScroll();
-  // const yProgress = useTransform(scrollYProgress, [0, 1], [0, 2000]);
-
   <motion.div ref={observerRef} className={cx([styles.container, extraClasses || null])}>
     <div className={styles.text}>
       <h2 className={cx(["heading-secondary", styles.title])}>What is it</h2>
@@ -25,7 +22,11 @@ const WhatIsIt = React.forwardRef<HTMLDivElement, Props>(({ extraClasses }, obse
       </p>
     </div>
     <div className={styles.main}>
-      <MobileDevice extraClasses={styles.mobileDevice} />
+      <MobileDevice
+        text="Get done with things!"
+        extraClasses={styles.mobileDevice}
+        stylesTextContainer={styles.textContainer_1}
+      />
     </div>
   </motion.div>
 ));
