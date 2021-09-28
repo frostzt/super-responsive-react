@@ -23,9 +23,10 @@ const WhatIsIt = React.forwardRef<HTMLDivElement, Props>(({ extraClasses }, obse
     </div>
     <div className={styles.main}>
       <MobileDevice
-        text="Get done with things!"
+        text="Create Tickets"
         extraClasses={styles.mobileDevice}
         stylesTextContainer={styles.textContainer_1}
+        subtitle="Get done with all your work with tickets and move on faster."
       />
     </div>
   </motion.div>

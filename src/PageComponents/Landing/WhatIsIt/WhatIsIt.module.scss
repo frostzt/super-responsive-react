@@ -1,3 +1,5 @@
+@import "../../../Styles/Animations.scss";
+
 .container {
   width: 100%;
   position: relative;
@@ -19,6 +21,14 @@
 
     .mobileDevice {
       width: 100%;
+    }
+
+    .textContainer {
+      &_1 {
+        top: 13rem;
+        left: 5rem;
+        animation: Float 8s ease infinite;
+      }
     }
   }
 }

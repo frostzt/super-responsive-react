@@ -1,3 +1,5 @@
+@import "../../Styles/Animations.scss";
+
 .container {
   height: 100%;
   position: relative;
@@ -11,10 +13,19 @@
     position: absolute;
 
     .title {
-      font-size: 2rem;
+      top: 1.5rem;
+      left: 1.5rem;
+      font-size: 1.7rem;
+      position: absolute;
       color: var(--white);
-      text-transform: uppercase;
-      filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.8));
+    }
+
+    .subtitle {
+      top: 4rem;
+      width: 70%;
+      left: 1rem;
+      position: absolute;
+      color: var(--white);
     }
   }
 
@@ -27,6 +38,7 @@
       top: 13%;
       left: 3%;
       position: absolute;
+      animation: Float 8s ease infinite 0.5s;
     }
 
     &__navigation {

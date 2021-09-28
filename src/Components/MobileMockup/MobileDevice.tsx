@@ -8,18 +8,22 @@ import styles from "./MobileDevice.module.scss";
 // Images
 import PhoneSvg from "./images/phone.svg";
 import TicketSvg from "./images/ticket.svg";
+import EmptyTicket from "./images/empty-ticket.svg";
 import NavigationSvg from "./images/navigation-bar.svg";
 
 interface Props {
   text?: string;
+  subtitle?: string;
   extraClasses?: string;
   stylesTextContainer?: string;
 }
 
-const MobileDevice: React.FC<Props> = ({ extraClasses, text, stylesTextContainer }) => (
+const MobileDevice: React.FC<Props> = ({ extraClasses, text, stylesTextContainer, subtitle }) => (
   <motion.div className={cx([styles.container, extraClasses || null])}>
-    <div className={cx([styles.text, stylesTextContainer])}>
-      <h2 className={styles.title}>{text}</h2>
+    <div className={cx([styles.text, stylesTextContainer || null])}>
+      <h2 className={cx(["heading-secondary", styles.title])}>{text}</h2>
+      <p className={styles.subtitle}>{subtitle}</p>
+      <img src={EmptyTicket} alt="SuperDev App" className={styles.titleHolder} />
     </div>
     <motion.div className={styles.phoneContainer}>
       <img src={NavigationSvg} alt="SuperDev App" className={styles.phoneContainer__navigation} />
