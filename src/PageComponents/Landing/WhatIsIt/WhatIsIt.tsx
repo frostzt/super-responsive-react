@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import styles from "./WhatIsIt.module.scss";
 
 // Components
+import Card from "../../../Components/Card/Card";
 import MobileDevice from "../../../Components/MobileMockup/MobileDevice";
 
 interface Props {
@@ -28,6 +29,7 @@ const WhatIsIt = React.forwardRef<HTMLDivElement, Props>(({ extraClasses }, obse
         stylesTextContainer={styles.textContainer_1}
         subtitle="Get done with all your work with tickets and move on faster."
       />
+      <Card />
     </div>
   </motion.div>
 ));
