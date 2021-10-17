@@ -14,8 +14,8 @@ yarn check-format ||
 # Check ESLint Standards
 yarn lint ||
 (
-        echo '😤🏀👋😤 Code Style does not match ESLint standards 😤🏀👋😤 
-                ESLint Check Failed. Make the required changes listed above, add changes and try to commit again.'
+        echo 'Code Style does not match ESLint standards
+        ESLint Check Failed. Make the required changes listed above, add changes and try to commit again.'
         false; 
 )
 
@@ -39,4 +39,4 @@ yarn build ||
 )
 
 # If everything passes... Now we can commit
-echo '✅✅✅✅ You win this time... I am committing this now. ✅✅✅✅'
+echo '✅✅✅✅ Checks passed! Committing now... ✅✅✅✅'
